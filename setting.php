@@ -10,6 +10,6 @@ $date = $_tool->getKhDate(date('Y/m/d'));
 $setting = [];
 
 $setting['date'] = $date;
-$setting['siteTitle'] = 'ទូរទស្សន៍​យើង';
+$setting['siteTitle'] = 'ពហុ​ព័ត៌មាន';
 $setting['message'] = '';
 $setting['adminPostLimit'] = 10;

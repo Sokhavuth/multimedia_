@@ -1,0 +1,36 @@
+/*static/styles/base.css*/
+:root{
+  --background: #c64242;
+  --background-dark: #541616;
+  --background-light: #f7c2c2;
+  --yellow: #ffd343;
+  --body-font: 14px/1.75 Vidaloka, OdorMeanChey;
+  --link: orangered;
+  --color: #541616;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a{
+  text-decoration: none;
+  color: var(--link);
+}
+
+a:hover{
+  opacity: .7;
+}
+
+.region{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+body{
+  color: var(--color);
+  font: var(--body-font);
+  background: var(--background-light);
+}
