@@ -2,8 +2,7 @@
 //routes/index/login.php
 $f3->route('GET /login', function($f3){
     if($f3->get('SESSION.email')){
-        $view = new View;
-        echo $view->render('views/admin/index.php');
+        $f3->reroute('/admin');
     }else{
         require_once('controllers/login.php');
         login($f3);
