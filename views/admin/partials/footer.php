@@ -1,5 +1,7 @@
+<!--views/admin/partials/footer.php-->
+<link href='<?php echo $BASE ?>/public/styles/admin/partials/footer.css' rel='stylesheet' />
 
-        <footer class='Footer region'>&copy; 2021 Khmer Web</footer>
+        <div class='Footer region'>&copy; 2021 Khmer Web</div>
         </div>
     </body>
 </html>

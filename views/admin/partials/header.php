@@ -21,11 +21,11 @@
                 </select>
 
                 <input type='text' name='search' required />
-                <input type='submit' value='បញ្ជូន' />
+                <input type='submit' value='ស្វែង​រក' />
             </form>
 
             <div class='logout'>
-                <a href='<?php echo $BASE ?>'>ទំព័រ​មុខ</a> | 
+                <a href='<?php echo $BASE ?>/'>ទំព័រ​មុខ</a> | 
                 <a href='<?php echo $BASE ?>/admin/logout'>ចេញ​ក្រៅ</a>
             </div>
         </div>
