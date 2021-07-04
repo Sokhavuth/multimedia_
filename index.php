@@ -1,6 +1,6 @@
 <?php
 // Kickstart the framework
-require 'vendor/autoload.php';
+require('vendor/autoload.php');
 $f3 = \Base::instance();
 
 session_start();

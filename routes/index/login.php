@@ -1,7 +1,7 @@
 <?php
 //routes/index/login.php
 $f3->route('GET /login', function($f3){
-    require_once('controllers/login.php');
+    require_once __DIR__ . '/../../controllers/login.php';
     login($f3);
 });
 

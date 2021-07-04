@@ -3,6 +3,8 @@
 
 function login($f3){
     require_once('setting.php');
+    require_once('controllers/users/collection.php');
+    collection($f3);
 
     $f3->mset([
         'appName'=>$setting['siteTitle'], 
