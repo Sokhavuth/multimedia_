@@ -7,7 +7,8 @@ function login($f3){
     $f3->mset([
         'appName'=>$setting['siteTitle'], 
         'title'=>'ទំព័រ​ដើម', 
-        'date'=>$setting['date']
+        'date'=>$setting['date'],
+        'message'=>$setting['message']
     ]);
 
     $view=new View;
