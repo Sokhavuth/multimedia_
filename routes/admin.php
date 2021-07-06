@@ -7,7 +7,7 @@ $f3->route('GET /admin', function($f3){
 
         $f3->mset([
             'appName'=>$setting['siteTitle'], 
-            'title'=>'ទំព័រ​គ្រប់គ្រង', 
+            'title'=>'ទំព័រ​ការផ្សាយ', 
             'date'=>$setting['date'],
             'message'=>$setting['message']
         ]);
