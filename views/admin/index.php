@@ -14,7 +14,7 @@
     <div class='content'>
         <form action='<?php echo $BASE ?>/admin/post' method='post'>
             <input type='text' name='title' required placeholder='ចំណងជើង' />
-            <textarea name='editor' id='editor'></textarea>
+            <textarea name='content' id='editor'></textarea>
             <div class='wrapper'>
                 <select name='category'>
                     <option>ជាតិ</option>

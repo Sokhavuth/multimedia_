@@ -19,3 +19,5 @@ $f3->route('GET /admin', function($f3){
         login($f3);
     }
 });
+
+require('routes/admin/post.php');
