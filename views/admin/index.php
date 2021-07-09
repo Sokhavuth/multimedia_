@@ -25,7 +25,7 @@
                 <input type='text' name='thumb' placeholder='តំណរភ្ជាប់​រូប' required />
                 <input type='datetime-local' name='datetime' required />
                 <input type='hidden' name='video' value='' />
-                <input type='submit' value='បញ្ជូន' />
+                <input type='submit' value='ចុះ​ផ្សាយ' />
             </div>
         </form>
 
@@ -42,12 +42,16 @@
                <option>No</option> 
             </select>
 
-            <input type='submit' value='វីដេអូ' onClick='genJson()' />
+            <input type='submit' value='បញ្ចូល​វីដេអូ' onClick='genJson()' />
         </div>
 
         <table class='viddata'></table>
     </div>
+
+    <script src="<?php echo $BASE ?>/public/scripts/ckeditor/config.js"></script>
+
 </div>
 
-<script src="<?php echo $BASE ?>/public/scripts/ckeditor/config.js"></script>
-<?php include('views/admin/partials/footer.php');
+<?php include('views/admin/partials/listing.php') ?>
+
+<?php include('views/admin/partials/footer.php') ?>

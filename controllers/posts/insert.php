@@ -15,5 +15,6 @@ function insert($f3){
     ];
 
     $collection->insertOne($post);
+    $f3->reroute('/admin');
 }
 

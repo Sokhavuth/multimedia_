@@ -4,12 +4,16 @@
 $f3->route('GET /admin', function($f3){
     if($f3->get('SESSION.email')){
         require_once('setting.php');
-
+        require_once('controllers/posts/select.php');
+        $data = select($f3, $setting['adminPostLimit']);
+        
         $f3->mset([
             'appName'=>$setting['siteTitle'], 
             'title'=>'ទំព័រ​ការផ្សាយ', 
             'date'=>$setting['date'],
-            'message'=>$setting['message']
+            'message'=>'ចំនួន​ការផ្សាយ​សរុបៈ '.$data[1],
+            'posts'=>$data[0],
+            'route'=>'post'
         ]);
 
         $view = new View;
