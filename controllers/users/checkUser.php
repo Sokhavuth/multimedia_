@@ -8,19 +8,8 @@ function checkUser($f3){
     if($user){
         $password = $collection->findOne(['password'=>$f3->get('POST.password')]);
         if($password){
-            require_once('setting.php');
-
-            $f3->mset([
-                'appName'=>$setting['siteTitle'], 
-                'title'=>'ទំព័រ​ការផ្សាយ', 
-                'date'=>$setting['date'],
-                'message'=>$setting['message']
-            ]);
-
             $f3->set('SESSION.email', $user['email']);
-
-            $view = new View;
-            echo $view->render('views/admin/index.php');
+            $f3->reroute('/admin');
         }else{
             $f3->set('message', 'ពាក្យ​សំងាត់​មិនត្រឹមត្រូវ​ទេ');
             $view = new View;

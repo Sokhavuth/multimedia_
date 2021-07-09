@@ -24,4 +24,9 @@ $f3->route('GET /admin', function($f3){
     }
 });
 
+$f3->route('GET /admin/logout', function($f3){
+    $f3->clear('SESSION');
+    $f3->reroute('/');
+});
+
 require('routes/admin/post.php');

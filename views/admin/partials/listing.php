@@ -24,10 +24,10 @@
             </div>
 
             <div class="edit-delete">
-                <a href="<?php echo $BASE.'/'.$route.'/edit/'.$post['id'] ?>">
+                <a href="<?php echo $BASE.'/admin/'.$route.'/edit/'.$post['id'] ?>">
                     <img class='edit' src="<?php echo $BASE ?>/public/images/edit.png" />
                 </a>
-                <a href="<?php echo $BASE.'/'.$route.'/delete/'.$post['id'] ?>">
+                <a href="<?php echo $BASE.'/admin/'.$route.'/delete/'.$post['id'] ?>">
                     <img class='delete' src="<?php echo $BASE ?>/public/images/delete.png" />
                 </a>
             </div>
