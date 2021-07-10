@@ -11,7 +11,8 @@ function selectOne($f3, $id){
         'title'=>'ទំព័រ​កែប្រែ', 
         'date'=>$setting['date'],
         'post'=>$post,
-        'id'=>$id
+        'id'=>$id,
+        'route'=>'post'
     ]);
 
     $view = new View;
