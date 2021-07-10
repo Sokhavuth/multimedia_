@@ -14,3 +14,8 @@ $f3->route('POST /admin/post/edit/@id', function($f3){
     require('controllers/posts/update.php');
     update($f3, $f3->get('PARAMS.id'));
 });
+
+$f3->route('GET /admin/post/delete/@id', function($f3){
+    require('controllers/posts/delete.php');
+    delete($f3, $f3->get('PARAMS.id'));
+});
