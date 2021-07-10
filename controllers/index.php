@@ -11,5 +11,5 @@ function index($f3){
     ]);
 
     $view=new View;
-    echo $view->render('ui/index.php');
+    echo $view->render('views/index.php');
 }

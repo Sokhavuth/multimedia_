@@ -4,6 +4,13 @@
 function checkUser($f3){
     $collection = $f3->get('DB')->users;
     $user = $collection->findOne(['email'=>$f3->get('POST.email')]);
+
+    require_once('setting.php');
+    $f3->mset([
+        'appName'=>$setting['siteTitle'], 
+        'title'=>'ទំព័រ​ដើម', 
+        'date'=>$setting['date']
+    ]);
         
     if($user){
         $password = $collection->findOne(['password'=>$f3->get('POST.password')]);
