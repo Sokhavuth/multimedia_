@@ -25,8 +25,13 @@ $f3->route('GET /admin', function($f3){
 });
 
 $f3->route('GET /admin/logout', function($f3){
-    $f3->clear('SESSION');
-    $f3->reroute('/');
+    if($f3->get('SESSION.email')){
+        $f3->clear('SESSION');
+        $f3->reroute('/');
+    }else{
+        require_once('controllers/login.php');
+        login($f3);
+    }
 });
 
 require('routes/admin/post.php');

@@ -12,4 +12,4 @@ $setting = [];
 $setting['date'] = $date;
 $setting['siteTitle'] = 'ពហុ​ព័ត៌មាន';
 $setting['message'] = '';
-$setting['adminPostLimit'] = 10;
+$setting['adminPostLimit'] = 2;

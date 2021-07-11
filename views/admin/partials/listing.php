@@ -1,5 +1,6 @@
 <!--views/admin/partials/listing.php-->
 <link href='<?php echo $BASE ?>/public/styles/admin/partials/listing.css' rel='stylesheet' />
+<script src="<?php echo $BASE ?>/public/scripts/admin/paginate.js"></script>
 
 <div class='Listing region'>
     <div class='info'><?php echo $message ?></div>
@@ -35,5 +36,8 @@
         <?php } ?>
     </div>
 
-    <div class='pagination'><img src="<?php echo $BASE ?>/public/images/load-more.png" /></div>
+    <div class='pagination'>
+        <img onClick="paginate('<?php echo $route ?>', '<?php echo $BASE ?>')" 
+        src="<?php echo $BASE ?>/public/images/load-more.png" />
+    </div>
 </div>
