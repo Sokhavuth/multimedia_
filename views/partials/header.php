@@ -9,6 +9,7 @@
         <link href="<?php echo $BASE ?>/public/images/site_logo.png" rel="icon" ></link>
         <link href="<?php echo $BASE ?>/public/styles/global.css" rel="stylesheet"></link>
         <link href="<?php echo $BASE ?>/public/styles/partials/header.css" rel="stylesheet"></link>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
     <div class='site'>
@@ -32,3 +33,5 @@
             </form>
         </div>
     </div>
+
+    <?php include('views/partials/menu.php') ?>
