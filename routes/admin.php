@@ -34,4 +34,4 @@ $f3->route('GET /admin/logout', function($f3){
     }
 });
 
-require('routes/admin/post.php');
+require __DIR__.('/admin/post.php');
