@@ -13,7 +13,7 @@ if($localhost){
     $dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
     $dotenv->load();
 }
-
+//comment
 $db_url = $_ENV["DATABASE_URI"];
 
 $client = new MongoDB\Client($db_url);
