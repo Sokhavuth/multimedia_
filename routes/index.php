@@ -19,4 +19,4 @@ $f3->route('GET /', function($f3){
 
 });
 
-require __DIR__.('/routes/index/login.php');
+require __DIR__.('/index/login.php');
