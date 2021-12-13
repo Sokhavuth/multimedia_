@@ -22,6 +22,6 @@ $db = $client->multimedia;
 $f3->set('DB', $db);
 
 require __DIR__.('/routes/index.php');
-require_once('routes/admin.php');
+require __DIR__.('/routes/admin.php');
 
 $f3->run();
